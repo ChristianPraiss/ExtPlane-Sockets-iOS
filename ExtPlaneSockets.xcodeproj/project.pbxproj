@@ -11,7 +11,6 @@
 		2F3D706E1D91E9550014619F /* GlobalSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D706C1D91E9550014619F /* GlobalSocket.swift */; };
 		2F3D706F1D91E9550014619F /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D706D1D91E9550014619F /* SocketManager.swift */; };
 		2F3D70731D91E9760014619F /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3D70711D91E9760014619F /* CocoaAsyncSocket.framework */; };
-		2F3D70741D91E9760014619F /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3D70721D91E9760014619F /* PromiseKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3D70731D91E9760014619F /* CocoaAsyncSocket.framework in Frameworks */,
-				2F3D70741D91E9760014619F /* PromiseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
