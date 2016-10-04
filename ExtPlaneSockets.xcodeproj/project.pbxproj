@@ -10,9 +10,9 @@
 		2F3D70601D91E94D0014619F /* ExtPlaneSockets.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F3D705E1D91E94D0014619F /* ExtPlaneSockets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F3D706E1D91E9550014619F /* GlobalSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D706C1D91E9550014619F /* GlobalSocket.swift */; };
 		2F3D706F1D91E9550014619F /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D706D1D91E9550014619F /* SocketManager.swift */; };
-		2F3D70731D91E9760014619F /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3D70711D91E9760014619F /* CocoaAsyncSocket.framework */; };
 		2F6B2AD51DA43D54000732C6 /* ExtPlaneSocketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B2AD41DA43D54000732C6 /* ExtPlaneSocketsTests.swift */; };
 		2F6B2AD71DA43D54000732C6 /* ExtPlaneSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3D705B1D91E94D0014619F /* ExtPlaneSockets.framework */; };
+		2F6B2AE41DA4559A000732C6 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6B2AE31DA4559A000732C6 /* CocoaAsyncSocket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +31,10 @@
 		2F3D705F1D91E94D0014619F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F3D706C1D91E9550014619F /* GlobalSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSocket.swift; sourceTree = "<group>"; };
 		2F3D706D1D91E9550014619F /* SocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
-		2F3D70711D91E9760014619F /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = ../Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
-		2F3D70721D91E9760014619F /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = ../Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		2F6B2AD21DA43D54000732C6 /* ExtPlaneSocketsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtPlaneSocketsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6B2AD41DA43D54000732C6 /* ExtPlaneSocketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtPlaneSocketsTests.swift; sourceTree = "<group>"; };
 		2F6B2AD61DA43D54000732C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F6B2AE31DA4559A000732C6 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F3D70731D91E9760014619F /* CocoaAsyncSocket.framework in Frameworks */,
+				2F6B2AE41DA4559A000732C6 /* CocoaAsyncSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +90,7 @@
 		2F3D70701D91E9760014619F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F3D70711D91E9760014619F /* CocoaAsyncSocket.framework */,
-				2F3D70721D91E9760014619F /* PromiseKit.framework */,
+				2F6B2AE31DA4559A000732C6 /* CocoaAsyncSocket.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -353,6 +351,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					$inherited,
 					$PROJECT_DIR/../Carthage/Build/iOS,
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ExtPlaneSockets/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -377,6 +376,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					$inherited,
 					$PROJECT_DIR/../Carthage/Build/iOS,
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ExtPlaneSockets/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -443,6 +443,7 @@
 				2F6B2ADB1DA43D54000732C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
