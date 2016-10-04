@@ -11,7 +11,19 @@
 		2F3D706E1D91E9550014619F /* GlobalSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D706C1D91E9550014619F /* GlobalSocket.swift */; };
 		2F3D706F1D91E9550014619F /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D706D1D91E9550014619F /* SocketManager.swift */; };
 		2F3D70731D91E9760014619F /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3D70711D91E9760014619F /* CocoaAsyncSocket.framework */; };
+		2F6B2AD51DA43D54000732C6 /* ExtPlaneSocketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B2AD41DA43D54000732C6 /* ExtPlaneSocketsTests.swift */; };
+		2F6B2AD71DA43D54000732C6 /* ExtPlaneSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3D705B1D91E94D0014619F /* ExtPlaneSockets.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F6B2AD81DA43D54000732C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F3D70521D91E94D0014619F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F3D705A1D91E94D0014619F;
+			remoteInfo = ExtPlaneSockets;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2F3D705B1D91E94D0014619F /* ExtPlaneSockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExtPlaneSockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +33,9 @@
 		2F3D706D1D91E9550014619F /* SocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
 		2F3D70711D91E9760014619F /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = ../Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		2F3D70721D91E9760014619F /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = ../Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
+		2F6B2AD21DA43D54000732C6 /* ExtPlaneSocketsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtPlaneSocketsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F6B2AD41DA43D54000732C6 /* ExtPlaneSocketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtPlaneSocketsTests.swift; sourceTree = "<group>"; };
+		2F6B2AD61DA43D54000732C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F6B2ACF1DA43D54000732C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F6B2AD71DA43D54000732C6 /* ExtPlaneSockets.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				2F3D705D1D91E94D0014619F /* ExtPlaneSockets */,
+				2F6B2AD31DA43D54000732C6 /* ExtPlaneSocketsTests */,
 				2F3D705C1D91E94D0014619F /* Products */,
 				2F3D70701D91E9760014619F /* Frameworks */,
 			);
@@ -48,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				2F3D705B1D91E94D0014619F /* ExtPlaneSockets.framework */,
+				2F6B2AD21DA43D54000732C6 /* ExtPlaneSocketsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,15 @@
 				2F3D70721D91E9760014619F /* PromiseKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F6B2AD31DA43D54000732C6 /* ExtPlaneSocketsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F6B2AD41DA43D54000732C6 /* ExtPlaneSocketsTests.swift */,
+				2F6B2AD61DA43D54000732C6 /* Info.plist */,
+			);
+			path = ExtPlaneSocketsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,16 +138,40 @@
 			productReference = 2F3D705B1D91E94D0014619F /* ExtPlaneSockets.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		2F6B2AD11DA43D54000732C6 /* ExtPlaneSocketsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F6B2ADC1DA43D54000732C6 /* Build configuration list for PBXNativeTarget "ExtPlaneSocketsTests" */;
+			buildPhases = (
+				2F6B2ACE1DA43D54000732C6 /* Sources */,
+				2F6B2ACF1DA43D54000732C6 /* Frameworks */,
+				2F6B2AD01DA43D54000732C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F6B2AD91DA43D54000732C6 /* PBXTargetDependency */,
+			);
+			name = ExtPlaneSocketsTests;
+			productName = ExtPlaneSocketsTests;
+			productReference = 2F6B2AD21DA43D54000732C6 /* ExtPlaneSocketsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		2F3D70521D91E94D0014619F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Christian Praiss";
 				TargetAttributes = {
 					2F3D705A1D91E94D0014619F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4AU9QCEHA8;
+						ProvisioningStyle = Automatic;
+					};
+					2F6B2AD11DA43D54000732C6 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4AU9QCEHA8;
 						ProvisioningStyle = Automatic;
@@ -133,12 +191,20 @@
 			projectRoot = "";
 			targets = (
 				2F3D705A1D91E94D0014619F /* ExtPlaneSockets */,
+				2F6B2AD11DA43D54000732C6 /* ExtPlaneSocketsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2F3D70591D91E94D0014619F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F6B2AD01DA43D54000732C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -157,7 +223,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F6B2ACE1DA43D54000732C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F6B2AD51DA43D54000732C6 /* ExtPlaneSocketsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F6B2AD91DA43D54000732C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F3D705A1D91E94D0014619F /* ExtPlaneSockets */;
+			targetProxy = 2F6B2AD81DA43D54000732C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2F3D70611D91E94D0014619F /* Debug */ = {
@@ -307,6 +389,32 @@
 			};
 			name = Release;
 		};
+		2F6B2ADA1DA43D54000732C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4AU9QCEHA8;
+				INFOPLIST_FILE = ExtPlaneSocketsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisspraiss.ExtPlaneSocketsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2F6B2ADB1DA43D54000732C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4AU9QCEHA8;
+				INFOPLIST_FILE = ExtPlaneSocketsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisspraiss.ExtPlaneSocketsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +435,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2F6B2ADC1DA43D54000732C6 /* Build configuration list for PBXNativeTarget "ExtPlaneSocketsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F6B2ADA1DA43D54000732C6 /* Debug */,
+				2F6B2ADB1DA43D54000732C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
