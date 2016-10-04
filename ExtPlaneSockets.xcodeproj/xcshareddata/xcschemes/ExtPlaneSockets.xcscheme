@@ -43,6 +43,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F6B2AD11DA43D54000732C6"
+               BuildableName = "ExtPlaneSocketsTests.xctest"
+               BlueprintName = "ExtPlaneSocketsTests"
+               ReferencedContainer = "container:ExtPlaneSockets.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
