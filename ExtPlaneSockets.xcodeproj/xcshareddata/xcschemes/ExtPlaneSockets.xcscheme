@@ -20,6 +20,20 @@
                ReferencedContainer = "container:ExtPlaneSockets.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2F6B2AD11DA43D54000732C6"
+               BuildableName = "ExtPlaneSocketsTests.xctest"
+               BlueprintName = "ExtPlaneSocketsTests"
+               ReferencedContainer = "container:ExtPlaneSockets.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -30,6 +44,15 @@
       codeCoverageEnabled = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2F3D705A1D91E94D0014619F"
+            BuildableName = "ExtPlaneSockets.framework"
+            BlueprintName = "ExtPlaneSockets"
+            ReferencedContainer = "container:ExtPlaneSockets.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
