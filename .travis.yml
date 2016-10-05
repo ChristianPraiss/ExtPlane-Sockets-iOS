@@ -3,7 +3,6 @@ language: objective-c
 xcode_project: ExtPlaneSockets.xcodeproj
 before_install:
   - brew update
-  - brew upgrade xctool
   - brew install carthage
   - carthage bootstrap --platform ios --no-use-binaries
 after_success:
