@@ -10,6 +10,7 @@
 		2F3D70601D91E94D0014619F /* ExtPlaneSockets.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F3D705E1D91E94D0014619F /* ExtPlaneSockets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F3D706E1D91E9550014619F /* GlobalSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D706C1D91E9550014619F /* GlobalSocket.swift */; };
 		2F3D706F1D91E9550014619F /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D706D1D91E9550014619F /* SocketManager.swift */; };
+		2F3EA2771DAC24210023D9FE /* CocoaAsyncSocket.framework in Copy Depedencies */ = {isa = PBXBuildFile; fileRef = 2F6B2AE31DA4559A000732C6 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F6B2AD51DA43D54000732C6 /* ExtPlaneSocketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B2AD41DA43D54000732C6 /* ExtPlaneSocketsTests.swift */; };
 		2F6B2AD71DA43D54000732C6 /* ExtPlaneSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3D705B1D91E94D0014619F /* ExtPlaneSockets.framework */; };
 		2F6B2AE41DA4559A000732C6 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6B2AE31DA4559A000732C6 /* CocoaAsyncSocket.framework */; };
@@ -27,6 +28,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2F3EA2761DAC24180023D9FE /* Copy Depedencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2F3EA2771DAC24210023D9FE /* CocoaAsyncSocket.framework in Copy Depedencies */,
+			);
+			name = "Copy Depedencies";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F95388D1DA4CE840067BCDA /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +153,7 @@
 				2F3D70571D91E94D0014619F /* Frameworks */,
 				2F3D70581D91E94D0014619F /* Headers */,
 				2F3D70591D91E94D0014619F /* Resources */,
+				2F3EA2761DAC24180023D9FE /* Copy Depedencies */,
 			);
 			buildRules = (
 			);
